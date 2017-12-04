@@ -4,7 +4,7 @@
 BASEDIR=$(cd $(dirname ${0}) && pwd -P)
 
 # CREATE GALAXY SERVICE
-sudo cp "${BASEDIR}/../scripts/galaxy.service /etc/systemd/system/"
+sudo cp "${BASEDIR}/../scripts/galaxy.service" /etc/systemd/system/
 sudo chmod 644 /etc/systemd/system/galaxy.service
 
 # CREATE MYSQL DATABASE AND USER
